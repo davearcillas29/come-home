@@ -1,0 +1,154 @@
+:root {
+    /*typography*/
+    --main-font: 'Playfair Display', serif;
+    --secondary-font: 'Lato', sans-serif;
+
+    /*backgrounds*/
+    --light-theme-bg:  #F8F5EC;
+    --dark-theme-bg: #22252E;
+
+    /*border colors*/
+    --light-theme-border-color: #000000;
+    --dark-theme-border-color: #FFFFFF;
+
+    /*colors*/
+    --color-olive-green: #6B7A45;
+    --color-grey: #E7E3D4;
+    --color-dark-grey: #7A7060;
+
+    /*text colors*/
+    --dark-theme-text-color: #FFFFFF;
+}
+
+/*universal reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--light-theme-bg);
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+/*dark theme*/
+body.dark-theme {
+    background-color: var(--dark-theme-bg);
+}
+
+/*navigation*/
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: clamp(0.5rem, 0.43rem + 0.36vw, 0.625rem) clamp(1rem, 0.55rem + 2.27vw, 1.5625rem);
+    border-bottom: 1px solid var(--light-theme-border-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.dark-theme nav{
+    border-bottom: 1px solid var(--dark-theme-border-color);
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-right{
+    display: flex;
+}
+
+/*Hamburger*/
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: transparent;
+    border: none;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color:  var(--color-dark-grey);
+}
+
+/*cross logo*/
+.logo {
+    margin-left: 20px;
+}
+
+/*brand name*/
+.brand {
+    margin-left: 10px;
+}
+
+.brand-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+body.dark-theme .brand-name {
+    color: var(--dark-theme-text-color);
+}
+
+/*slogan*/
+.slogan {
+    margin-right: 20px;
+    margin-top: 4px;
+}
+
+.slogan-text {
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    border: 1px solid var(--color-olive-green);
+    border-radius: 25px;
+    background-color: var(--color-grey);
+    padding: 5px 10px;
+    color: var(--color-olive-green);
+}
+
+body.dark-theme .slogan-text {
+    background-color: var(--dark-theme-bg);
+}
+
+/*dark and light theme toggle*/
+.theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.lucide-moon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 50%;
+    background-color: var(--color-grey);
+    padding: 3px 3px;
+}
+
+body.dark-theme .lucide-moon {
+    display: none;
+}
+
+.lucide-sun {
+    display: none;
+}
+
+body.dark-theme .lucide-sun {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 50%;
+    background-color: var(--dark-theme-bg);
+    padding: 3px 3px;
+    stroke: var(--color-dark-grey);
+}
+
