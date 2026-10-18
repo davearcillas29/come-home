@@ -1,0 +1,91 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: clamp(0.5rem, 0.43rem + 0.36vw, 0.625rem) clamp(1rem, 0.55rem + 2.27vw, 1.5625rem);
+    border-bottom: 1px solid var(--border-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Hamburger */
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: var(--color-dark-grey);
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.brand {
+    margin-left: 10px;
+}
+
+.brand-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+.slogan {
+    margin-right: 20px;
+}
+
+.slogan-text {
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    border: 1px solid var(--color-olive-green);
+    border-radius: 25px;
+    background-color: var(--card-bg);
+    padding: 5px 10px;
+    color: var(--color-olive-green);
+}
+
+/* Dark and Light Theme Toggle Icon Visibility */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.lucide-moon, .lucide-sun {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.lucide-moon {
+    background-color: var(--card-bg);
+}
+
+.lucide-sun {
+    display: none;
+    stroke: var(--color-dark-grey);
+    background-color: var(--bg-primary);
+}
+
+body.dark-theme .lucide-moon {
+    display: none;
+}
+
+body.dark-theme .lucide-sun {
+    display: block;
+}

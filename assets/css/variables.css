@@ -1,0 +1,23 @@
+:root {
+    /* Typography */
+    --main-font: 'Playfair Display', serif;
+    --secondary-font: 'Lato', sans-serif;
+
+    /* Base Palette Defaults (Light) */
+    --bg-primary: #F8F5EC;
+    --text-primary: #000000;
+    --border-color: #000000;
+    --card-bg: #E7E3D4;
+
+    /* Brand Accent Colors */
+    --color-olive-green: #6B7A45;
+    --color-dark-grey: #7A7060;
+}
+
+/* Dark Theme State Overrides */
+body.dark-theme {
+    --bg-primary: #22252E;
+    --text-primary: #FFFFFF;
+    --border-color: #FFFFFF;
+    --card-bg: #22252E;
+}
