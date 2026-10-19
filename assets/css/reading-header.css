@@ -1,0 +1,20 @@
+.readings-contents{
+    width: 325px;
+    height: 100px;
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    padding: 16px;
+}
+
+.header-title{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.title-name{
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    color: var(--color-dark-grey);
+    letter-spacing: 0.1em;
+}
