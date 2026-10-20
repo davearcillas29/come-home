@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function initReadings(){
     const dateElement = document.getElementById("readings-date");
     if (dateElement){
         const today = new Date();
@@ -12,4 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
         dateElement.textContent = formattedDate;
 
     }
-});
+}
