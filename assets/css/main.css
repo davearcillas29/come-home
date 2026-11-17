@@ -3,6 +3,8 @@
 @import 'reading-header.css';
 @import 'reading-content.css';
 @import 'readings-section.css';
+@import 'full-readings-container.css';
+@import 'full-readings-button.css';
 
 /* Universal Reset */
 * {

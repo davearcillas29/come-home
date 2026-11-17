@@ -5,19 +5,25 @@
 
     /* Base Palette Defaults (Light) */
     --bg-primary: #F8F5EC;
+    --bg-secondary: #F0EAD6;
     --text-primary: #000000;
     --border-color: #000000;
     --card-bg: #E7E3D4;
+    --reading-btn-bg: #1F4F96;
 
     /* Brand Accent Colors */
     --color-olive-green: #6B7A45;
     --color-dark-grey: #7A7060;
+    --color-white: #F8F5EC;
+    
 }
 
 /* Dark Theme State Overrides */
 body.dark-theme {
     --bg-primary: #22252E;
+    --bg-secondary: #1A1C22;
     --text-primary: #FFFFFF;
     --border-color: #FFFFFF;
     --card-bg: #22252E;
+    --reading-btn-bg: #3A6BBF;
 }
