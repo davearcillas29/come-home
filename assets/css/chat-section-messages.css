@@ -1,0 +1,7 @@
+.chat-messages{
+    flex: 0.7;
+    min-height: 0;
+    overflow-y: auto;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+}

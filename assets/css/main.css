@@ -5,18 +5,24 @@
 @import 'readings-section.css';
 @import 'full-readings-container.css';
 @import 'full-readings-button.css';
+@import 'chat-section-container.css';
+@import 'chat-section-messages.css';
 
 /* Universal Reset */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: var(--main-font);
     background-color: var(--bg-primary);
     color: var(--text-primary);
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
+main{
+    display: flex;
+    flex-direction: row;
+}
