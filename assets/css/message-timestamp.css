@@ -1,0 +1,6 @@
+.message-timestamp{
+    font-family: var(--secondary-font);
+    font-size: 0.75rem;
+    color: var(--color-dark-grey);
+    padding-left: 15px;
+}

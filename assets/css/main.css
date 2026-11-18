@@ -10,6 +10,9 @@
 @import 'ai-response-container.css';
 @import 'ai-avatar.css';
 @import 'chat-section-user-input.css';
+@import 'ai-welcome-message.css';
+@import 'message-timestamp.css';
+@import 'chat-section-message-time-container.css';
 
 /* Universal Reset */
 *{
