@@ -9,7 +9,7 @@
     --text-primary: #000000;
     --border-color: #000000;
     --card-bg: #E7E3D4;
-    --reading-btn-bg: #1F4F96;
+    --light-theme-blue: #1F4F96;
 
     /* Brand Accent Colors */
     --color-olive-green: #6B7A45;
@@ -25,5 +25,6 @@ body.dark-theme {
     --text-primary: #FFFFFF;
     --border-color: #FFFFFF;
     --card-bg: #22252E;
-    --reading-btn-bg: #3A6BBF;
+    --light-theme-blue: #3A6BBF;
+    --color-dark-grey: #9A9282;
 }
