@@ -9,7 +9,7 @@ export function initChatInput() {
     const resizeTextarea = () => {
         textarea.style.height = 'auto';
         const nextHeight = Math.min(textarea.scrollHeight, maxHeight);
-        textarea.style.height = '${nextHeight}px';
+        textarea.style.height = `${nextHeight}px`;
         textarea.style.overflowY = textarea.scrollHeight > maxHeight ? 'auto' : 'hidden';
     };
 
@@ -20,6 +20,6 @@ export function initChatInput() {
     if(form){
         form.addEventListener('reset', () => {
             requestAnimationFrame(resizeTextarea);
-        })
+        });
     }
 }
