@@ -1,0 +1,9 @@
+.percaution-message{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: var(--color-dark-grey);
+    font-size: 0.9rem;
+}

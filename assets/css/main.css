@@ -13,6 +13,11 @@
 @import 'ai-welcome-message.css';
 @import 'message-timestamp.css';
 @import 'chat-section-message-time-container.css';
+@import 'precaution-message.css';
+@import 'user-input.css';
+@import 'input-form.css';
+@import 'chat-input.css';
+@import 'send-btn.css';
 
 /* Universal Reset */
 *{
